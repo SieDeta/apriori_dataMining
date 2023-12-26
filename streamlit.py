@@ -240,6 +240,7 @@ def preprocess_data(data):
                     .size().unstack().reset_index().fillna(0)
                     .set_index('DEBIT'))
 
+    st.subheader('Data Setelah Pre-Processing')
     st.write(filtered_data)
 
     transaksiSJY = transaksiSJY.apply(pd.to_numeric, errors='coerce')
