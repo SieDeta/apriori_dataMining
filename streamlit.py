@@ -368,7 +368,7 @@ def main():
 
                 # User input for minimum support and minimum confidence and minimum lift
                 min_support = st.slider(
-                    "Minimum Support", min_value=0.1, max_value=1.0, step=0.01, value=0.12)
+                    "Minimum Support", min_value=0.01, max_value=1.0, step=0.01, value=0.12)
                 min_confidence = st.slider(
                     "Minimum Confidence", min_value=0.1, max_value=1.0, step=0.01, value=0.5)
                 min_lift = st.slider(
@@ -410,7 +410,7 @@ def main():
 
             else:
                 st.error(
-                    "Start Date should be before End Date. Please select a valid date range.")
+                    "Tanggal Awal harus sebelum Tanggal Akhir. Silakan pilih rentang tanggal yang valid.")
         else:
             st.write("Silakan unggah file CSV terlebih dahulu di halaman Home.")
     # ===== END OF FILTER =============
